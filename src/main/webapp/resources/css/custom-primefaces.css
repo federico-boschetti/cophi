@@ -1,0 +1,33 @@
+/* 
+    Document   : custom-primefaces
+    Created on : Jan 17, 2013, 3:34:52 PM
+    Author     : federico[DOT]boschetti[DOT]73[AT]gmail[DOT]com
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-color: #ececec
+}
+
+.menu .ui-selectonemenu-label { 
+    background: azure;
+    font-size: small;
+    alignment-adjust: alphabetic;
+    alignment-baseline: alphabetic;
+}
+.panel .ui-selectonemenu-list { 
+    background: azure;
+    font-size: small;
+    alignment-adjust: alphabetic;
+    alignment-baseline: alphabetic;
+}
+
+.ui-icon{
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,57 @@
+/*
+ * This file is part of CophiProofReader
+ *
+ * Copyright (C) 2013 federico[DOT]boschetti[DOT]73[AT]gmail[DOT]com
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+Version: 0.1 (pre-pre-alpha)
+
+CoPhiProofReader is a webapplication to assist proof readers of Ancient Greek
+and Latin classical editions.
+Inspared by hocr Editor plugin for Firex, 
+https://addons.mozilla.org/en-US/firefox/addon/hocr-editor,
+the image is split in text lines followed by the related editable OCR output.
+Colors indicate if a word is recognized by the spellchecker (black),
+not recognized due to accent issues (grey),
+not recognized but a well formed syllabic sequence (blue)
+or, finally, a bad sequence of characters.
+
+Clicking on the words, a list box shows the suggestions of the spell-checker
+and of the alignment with another edition, if provided (not in the current demo).
+
+The current hocr parsed by this application is NOT STANDARD. It is based on
+a proprietary nidification of <span/> tags with some proprietary attributes.
+Next version will be compliant with the hocr microformat specifications,
+according to this document:
+https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0
+
+The Latin spellchecker has not yet plugged in, so currently all Latin words are
+classified as errors.
+
+This version is just a demo: one static .html file and the related image
+are statically uploaded and changes are not saved.
+
+
+INSTALL
+
+Copy files in src/main/resources/opt/junk into your /opt/junk directory
+
+Create the .war file running maven in the directory that contains the pom.xml file:
+mvn install 
+
+Upload the .war file on Tomcat
+
