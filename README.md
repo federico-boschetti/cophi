@@ -1,4 +1,0 @@
-cophi
-=====
-
-Computational Philology
